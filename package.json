@@ -1,0 +1,16 @@
+{
+  "name": "resell-buddy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Subscription-based marketplace monitoring for resellers — Discord + dashboard",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev -w @resell-buddy/web",
+    "dev:bot": "npm run dev -w @resell-buddy/bot",
+    "build": "npm run build -w @resell-buddy/shared && npm run build -w @resell-buddy/web && npm run build -w @resell-buddy/bot"
+  },
+  "license": "MIT"
+}
